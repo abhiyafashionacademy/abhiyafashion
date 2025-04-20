@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Learn about Abhiya Fashion Academy – a leading fashion design institute in India offering hands-on training and expert mentorship.">
+  <meta name="keywords" content="Abhiya Fashion Academy, fashion design institute, fashion training, fashion career, design school India,abhiyafashionacademy, abhiyafashionacademy bhosari, fashion academy, fashion courses, fashion design courses, fashion design classes, fashion design training, fashion design school, fashion design institute in India, fashion design institute in Pune, fashion design institute in Bhosari, fashion design institute in Pimpri Chinchwad">
+  <meta name="author" content="Abhiya Fashion Academy">
+
+  <title>About Us - Abhiya Fashion Academy</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Playfair Display', serif;
+    }
+
+    body {
+      background-color: #ffffff;
+      color: #000000;
+    }
+
+    header {
+      background-color: #ffffff;
+      color: #000;
+      padding: 0.5rem 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #ddd;
+      flex-wrap: wrap;
+      position: relative;
+    }
+
+    .logo-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      flex-wrap: wrap;
+    }
+
+    .logo-nav img {
+      width: 80px;
+      height: auto;
+    }
+
+    nav {
+      display: flex;
+      gap: 2rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #c00;
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 1.5rem;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    .mobile-nav {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background: #fff;
+      text-align: center;
+      padding-top: 1rem;
+    }
+
+    .mobile-nav a {
+      margin: 0.5rem 0;
+    }
+
+    section {
+      padding: 2rem 1rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .about-hero {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .about-hero h3 {
+      font-size: 1rem;
+      color: #777;
+    }
+
+    .about-hero h1 {
+      font-size: 2.5rem;
+      margin: 0.5rem 0;
+    }
+
+    .about-text {
+      font-size: 1.2rem;
+      text-align: center;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .team-section {
+      margin-top: 3rem;
+      text-align: center;
+    }
+
+    .team-section h2 {
+      margin-bottom: 1rem;
+    }
+
+    .carousel {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      margin-top: 2rem;
+      position: relative;
+    }
+
+    .carousel-track {
+      display: flex;
+      transition: transform 0.6s ease;
+    }
+
+    .card {
+      flex: 0 0 33.333%;
+      padding: 1rem;
+      opacity: 0.5;
+      transform: scale(0.9);
+      transition: transform 0.3s, opacity 0.3s;
+      text-align: center;
+    }
+
+    .card.active {
+      opacity: 1;
+      transform: scale(1.1);
+    }
+
+      footer {
+        background-color: #f0f0f0;
+        text-align: center;
+        padding: 2rem 1rem;
+        font-size: 0.9rem;
+        border-top: 1px solid #ccc;
+        color: #333;
+      }
+    .card img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
+
+    .card h3 {
+      margin-bottom: 0.5rem;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: block;
+      }
+
+      nav {
+        display: none;
+      }
+
+      .mobile-nav {
+        display: flex;
+      }
+
+      .carousel {
+        justify-content: center;
+      }
+
+      .card {
+        flex: 0 0 100%;
+        opacity: 0.5;
+        transform: scale(0.9);
+      }
+
+      .card.active {
+        opacity: 1;
+        transform: scale(1.1);
+      }
+
+      footer {
+        background-color: #f0f0f0;
+        text-align: center;
+        padding: 2rem 1rem;
+        font-size: 0.9rem;
+        border-top: 1px solid #ccc;
+        color: #333;
+      }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo-nav">
+      <img src="./static/abhiya.jpg" alt="Abhiya Logo" />
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <nav id="desktop-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+    </div>
+    <div class="mobile-nav" id="mobile-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </header>
+
+  <section class="about-hero">
+    <h3>Welcome to</h3>
+    <h1>Abhiya Fashion Academy</h1>
+  </section>
+
+  <section class="about-text">
+    <p>At Abhiya Fashion Academy, we nurture creative minds into confident designers through hands-on fashion training, personal mentorship, and industry-ready skills. Our academy has transformed the lives of 1000+ students and continues to grow as a vibrant community of passionate learners and innovators.</p>
+  </section>
+
+  <section class="team-section">
+    <h2>Meet Our Team</h2>
+    <div class="carousel">
+      <div class="carousel-track" id="carousel-track">
+        <div class="card"><img src="./static/team1.jpg" alt="Member 1"><h3>Miss. Priya Sharma</h3><p>Senior Mentor<br>"Inspire creativity with dedication."</p></div>
+        <div class="card"><img src="./static/team2.png" alt="Member 2"><h3>Mr. Abhishek Bagade</h3><p>Founder<br>"Crafting quality is our passion."</p></div>
+        <div class="card"><img src="./static/team3.png" alt="Member 3"><h3>Miss. Naziya Shaikh</h3><p>Style Co-Founder<br>"Design your dreams with us."</p></div>
+        <div class="card"><img src="./static/team4.png" alt="Member 4"><h3>Mr. Arjun Patil</h3><p>Marketing Head<br>"Taking fashion to the next level."</p></div>
+        <div class="card"><img src="./static/team5.png" alt="Member 5"><h3>Miss. Divya Rao</h3><p>Student Co-ordinator<br>"Your journey is our priority."</p></div>
+      </div>
+    </div>
+  </section>
+  <section class="about-text">
+    <h4 style="padding: 20px;">Unlock Your Creative Potential at Abhiya Fashion Academy</h4>
+    <p style="padding-bottom: 10px;">Join the leading fashion design institute in India where creativity meets career. At Abhiya Fashion Academy, we empower aspiring designers with hands-on fashion training, personalized mentorship, and industry-relevant skills that set them apart in the world of fashion.</p>
+    <p style="padding-bottom: 10px;">With a legacy of transforming over 1,000+ students into successful fashion professionals, our academy continues to grow as a thriving community of fashion enthusiasts, innovators, and changemakers. Whether you dream of launching your own label or working with top fashion brands, Abhiya is your launchpad to success.</p>
+    <h4 style="padding: 20px;">Why Choose Abhiya Fashion Academy?</h4>
+    <ul style="padding-bottom: 10px;">
+      <li style="padding-bottom: 4px;">💝Practical, project-based learning approach</li>
+      <li style="padding-bottom: 4px;">💝Expert mentors with real industry experience</li>
+      <li style="padding-bottom: 4px;">💝Courses tailored for beginners to advanced levels</li>
+      <li style="padding-bottom: 4px;">💝Strong placement assistance & career guidance</li>
+      <li style="padding-bottom: 4px;">💝Exposure to real-world fashion shows & exhibitions</li>
+    </ul>
+  </section>
+  <footer>
+    <p>Contact: 7414917519 / 8390751919 | Email: info@abhiyafashionacademy.com</p>
+    <p>Address: Plot 434, Anandrao Lande Rd, Indrayani Colony, Indrayni Nagar Sector 2, Bhosari, Pimpri-Chinchwad, Maharashtra 411026</p>
+    <p><a href="#">Terms & Conditions</a> | <a href="#">Privacy Policy</a></p>
+    <p>&copy; 2025 Abhiya Fashion Academy. All rights reserved.</p>
+  </footer>
+
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('mobile-nav');
+      nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+    }
+
+    let currentIndex = 0;
+    const track = document.getElementById('carousel-track');
+    const cards = document.querySelectorAll('.carousel-track .card');
+
+    function updateCarousel() {
+      const total = cards.length;
+      const visibleCount = window.innerWidth <= 768 ? 1 : 3;
+      const centerIndex = Math.floor(visibleCount / 2);
+      const offset = (currentIndex + total) % total;
+
+      cards.forEach(card => {
+        card.classList.remove('active');
+        card.style.order = (card.dataset.index - offset + total) % total;
+      });
+
+      const activeCardIndex = (offset + centerIndex) % total;
+      cards[activeCardIndex].classList.add('active');
+    }
+
+    cards.forEach((card, index) => {
+      card.dataset.index = index;
+    });
+
+    setInterval(() => {
+      currentIndex++;
+      updateCarousel();
+    }, 6000);
+
+    updateCarousel();
+  </script>
+ </body>
+</html>

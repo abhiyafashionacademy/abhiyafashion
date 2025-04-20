@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing - Abhiya Fashion Academy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Playfair Display', serif;
+    }
+
+    body {
+      background-color: #ffffff;
+      color: #000000;
+    }
+
+    header {
+      background-color: #ffffff;
+      color: #000;
+      padding: 0.5rem 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #ddd;
+      flex-wrap: wrap;
+      position: relative;
+    }
+
+    .logo-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      flex-wrap: wrap;
+    }
+
+    .logo-nav img {
+      width: 80px;
+      height: auto;
+    }
+
+    nav {
+      display: flex;
+      gap: 2rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #c00;
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 1.5rem;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    .mobile-nav {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background: #fff;
+      text-align: center;
+      padding-top: 1rem;
+    }
+
+    .mobile-nav a {
+      margin: 0.5rem 0;
+    }
+
+    section {
+      padding: 2rem 1rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h1, h2, h3 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .pricing-table {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .pricing-card {
+      border: 1px solid #000;
+      border-radius: 10px;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .pricing-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .pricing-card h3 {
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+
+    .pricing-card p {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+
+    .pricing-card ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 1rem;
+    }
+
+    .pricing-card ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    .highlight {
+      color: #c00;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #f0f0f0;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      border-top: 1px solid #ccc;
+      color: #333;
+    }
+
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: block;
+      }
+
+      nav {
+        display: none;
+      }
+
+      .mobile-nav {
+        display: flex;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo-nav">
+      <img src="./static/abhiya.jpg" alt="Abhiya Logo">
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <nav id="desktop-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+    </div>
+    <div class="mobile-nav" id="mobile-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </header>
+
+  <section>
+    <h1>Choose Your Plan</h1>
+    <p style="text-align:center; font-size:1.1rem;">Affordable options tailored for every aspiring fashion designer.</p>
+
+    <div class="pricing-table">
+      <div class="pricing-card">
+        <h3>Register Now</h3>
+        <p><span class="highlight">at ₹3000/-</span></p>
+        <ul>
+          <li>Daily Basic Classes</li>
+          <li>Material Guidance</li>
+          <li>Personal Feedback</li>
+        </ul>
+      </div>
+
+      <div class="pricing-card">
+        <h3>Pay Us</h3>
+        <p><span class="highlight">₹60000 for 6 Months</span></p>
+        <ul>
+          <li>Full Curriculum</li>
+          <li>Portfolio Shoot Included</li>
+          <li>Certification + Internship Assistance</li>
+        </ul>
+      </div>
+
+      <div class="pricing-card">
+        <h3>Scholarship</h3>
+        <p><span class="highlight">Up to 40% off</span></p>
+        <ul>
+          <li>Need-Based Assessment</li>
+          <li>Merit-Based Selection</li>
+          <li>Limited Seats</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>How Can You Pay?</h2>
+    <ul style="text-align:center; list-style:none; padding:0; font-size:1.1rem;">
+      <li>✅ Credit/Debit Card</li>
+      <li>✅ 2 Installments (50% upfront)</li>
+      <li>✅ Full Payment (10% Discount)</li>
+      <li>✅ UPI & Bank Transfer Accepted</li>
+    </ul>
+  </section>
+<section>
+    <h2 style="text-align:center; color:#c00;">NOTE:</h2>
+    <p style="text-align:center; font-size:1.1rem;">We only accept payments at our branch.</p>
+</section>
+
+<section>
+    <h2 style="text-align:center;">We are available for you!</h2>
+    <p style="text-align:center; font-size:1.1rem;">Feel free to reach out to us through the following channels:</p>
+    <ul style="text-align:center; list-style:none; padding:0; font-size:1.1rem;">
+        <li>📞 Contact: 7414917519 / 8390751919</li>
+        <li>📧 Email: <a href="mailto:info@abhiyafashionacademy.com">info@abhiyafashionacademy.com</a></li>
+        <li> 
+            <a href="#" target="_blank"><img src="./static/facebook.png" alt="Facebook" style="width:24px; height:32px; margin:0 5px; padding: auto; padding-top: 10px;"></a>
+            <a href="#" target="_blank"><img src="./static/instagram.png" alt="Instagram" style="width:34px; height:28px; margin:0 5px; padding: auto; padding-top: 10px;"></a>
+            <a href="#" target="_blank"><img src="./static/x.png" alt="x" style="width:20px; height:28px; margin:0 5px; padding: auto; padding-top: 10px;"></a>
+        </li>
+    </ul>
+</section>
+
+  <footer>
+    <p>Contact: 7414917519 / 8390751919 | Email: info@abhiyafashionacademy.com</p>
+    <p>Address: Plot 434, Anandrao Lande Rd, Indrayani Colony, Indrayni Nagar Sector 2, Bhosari, Pimpri-Chinchwad, Maharashtra 411026</p>
+    <p><a href="#">Terms & Conditions</a> | <a href="#">Privacy Policy</a></p>
+    <p>&copy; 2025 Abhiya Fashion Academy. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('mobile-nav');
+      nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+    }
+  </script>
+</body>
+
+</html>
